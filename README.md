@@ -1,4 +1,4 @@
-# A Telescope plugin work with mpd
+# A Telescope plugin Template
 
 A simple telescope plugin template, feel free to copy it
 
