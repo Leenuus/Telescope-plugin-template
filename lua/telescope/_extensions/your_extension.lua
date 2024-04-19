@@ -119,6 +119,7 @@ return require("telescope").register_extension({
   exports = {
     -- NOTE: name it the same as plugin name, so it can be access without pain
     -- this is always a picker you want to export
+    -- :Telescope your_extension
     ["your_extension"] = simple_picker,
     -- NOTE: this picker can be call with
     -- :Telescope your_extension subcommand
