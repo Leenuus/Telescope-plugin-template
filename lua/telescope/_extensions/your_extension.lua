@@ -48,6 +48,7 @@ local simple_picker = function(opts)
         -- NOTE: previewer open a new window holding a buffer
         -- showing the detail of entry to user
         previewer = previewers.new_buffer_previewer({
+          title = "awesome telescope previewer",
           define_preview = function(self, entry, status)
             local lines = vim.split(entry["value"], "\n")
             vim.api.nvim_buf_set_lines(self.state.bufnr, 0, 0, true, lines)
@@ -100,6 +101,7 @@ local command_result_picker = function(opts)
           return true
         end,
         previewer = previewers.new_buffer_previewer({
+          title = "awesome telescope previewer",
           define_preview = function(self, entry, status)
             local lines = vim.split(entry["value"], "\n")
             vim.api.nvim_buf_set_lines(self.state.bufnr, 0, 0, true, lines)
